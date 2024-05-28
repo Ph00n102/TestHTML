@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /*ความสูงของปุ่ม*/
+    background-color: hsl(0, 0%, 95%); /*สีพื้นหลัง*/
+}
+
+#calculator{
+    font-family: Arial, sans-serif; /*ฟอร์ทตัวอักษร*/
+    background-color: hsl(0, 0%, 0%); /*สีพื้นหลัง*/
+    border-radius: 15px; /*ทำให้กรอบมนๆ*/
+    max-width: 500px; /*ความกว้าง*/
+    overflow: hidden; 
+}
+#display{
+    width: 100%; /*ความกว้าง*/
+    padding: 20px; /*จัดปุ่มให้ขยับลงมา*/
+    font-size: 5rem; /*ขนาดตัวอักษร*/
+    text-align: left;/*ตัวอักษรชิดซ้าย*/
+    border: none; /*ทำให้ไม่มีขอบ*/
+    background-color: hsl(0, 0%, 20%); /*สีพื้นหลัง*/
+}
+#keys{
+    display: grid; /*ปรับปรุงให้เรียงตรง*/
+    grid-template-columns: repeat(4, 1fr); /*เรียงปุ่มให้1แถวมี4ปุ่ม*/
+    gap: 10px; /*จัดปุ่มให้มีความห่างกัน*/
+    padding: 25px; /*จัดปุ่มให้ขยับลงมา*/
+}
+
+
+button{
+    width: 100px; /*ความกว้างของปุ่ม*/
+    height: 100px; /*ความสูงของปุ่ม*/
+    border-radius: 50px; /*ทำให้ปุ่มเป็นวงกลม*/
+    border: none; /*ทำให้ปุ่มไม่มีขอบ*/
+    background-color: hsl(0, 0%, 30%); /*สีพื้นหลัง*/
+    color: hsl(0, 17%, 98%); /*สีตัวอักษร*/
+    font-size: 3rem; /*ขนาดตัวอักษร*/
+    font-weight: bold; /*ทำตัวหนา*/
+    cursor: pointer; /*นำเมาท์ไปชี้ที่ปุ่มให้เปลี่ยนเป็นรูปมือ*/
+}
+button:hover{
+    background-color: hsl(0, 0%, 40%); /*สีพื้นหลัง*/
+}
+button:active{
+    background-color: hsl(0, 0%, 50%); /*สีพื้นหลัง*/
+}
+.operator-btn{
+    background-color: hsl(35, 100%, 55%); /*สีพื้นหลัง*/
+}
+.operator-btn:hover{
+    background-color: hsl(35, 100%, 65%); /*สีพื้นหลัง*/
+}
+.operator-btn:active{
+    background-color: hsl(35, 100%, 75%); /*สีพื้นหลัง*/
+}
